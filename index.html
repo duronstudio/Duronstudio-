@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Duron Studio Photography — fashion, editorial and commercial photography with model casting.">
+<title>Duron Studio Photography</title>
+<style>
+:root{--bg:#080808;--fg:#f5f2ed;--muted:#aaa;--line:#292929}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:auto;padding:0 24px}
+nav{position:fixed;z-index:10;inset:0 0 auto;background:#080808dd;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff12}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.brand{font:17px Georgia,serif;letter-spacing:4px}
+.links{display:flex;gap:25px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.hero{min-height:92vh;display:flex;align-items:end;padding:130px 0 60px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#000d,#0003),url("images/hero.jpg") center/cover}
+.hero>*{position:relative}
+.hero h1{font:400 clamp(52px,9vw,105px)/.92 Georgia,serif;max-width:760px;margin:18px 0}
+.eyebrow,.kicker{font-size:11px;letter-spacing:4px;text-transform:uppercase}
+.hero p,.intro{max-width:680px;color:#ccc;font-size:17px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{display:inline-block;border:1px solid #eee;padding:13px 21px;font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.light{background:#f4f1eb;color:#111}
+section{padding:95px 0;border-bottom:1px solid var(--line)}
+.title{font:400 clamp(38px,6vw,64px)/1.05 Georgia,serif;margin:12px 0 28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px}
+.card{border:1px solid var(--line);overflow:hidden;background:#0c0c0c}
+.card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.cap{padding:17px}
+.cap h3,.service h3{font:400 25px Georgia,serif;margin:0 0 5px}
+.cap p,.service p{margin:0;color:#999}
+.two,.contact{display:grid;grid-template-columns:1fr 1fr;gap:65px}
+.service{border-top:1px solid var(--line);padding:20px 0}
+.cast{background:#eee9e1;color:#111}
+.cast .intro{color:#444}
+.cast .service{border-color:#c9c1b7}
+.form{display:grid;gap:12px}
+.form input,.form textarea{width:100%;padding:15px;background:#0d0d0d;color:#fff;border:1px solid #333;font:inherit}
+.form textarea{min-height:130px}
+.contactbox{border-top:1px solid var(--line);padding-top:20px}
+.contactbox a{display:block;margin:9px 0}
+.social{display:flex;gap:18px;margin-top:20px;color:#ddd}
+.note{margin-top:12px;color:#777;font-size:12px}
+footer{padding:32px 0;color:#777;font-size:12px}
+@media(max-width:760px){
+ .links{display:none}.wrap{padding:0 18px}.nav{height:62px}.hero{min-height:86vh}
+ .hero:before{background:linear-gradient(0deg,#000e,#0004),url("images/hero.jpg") center/cover}
+ .grid,.two,.contact{grid-template-columns:1fr;gap:28px}
+ section{padding:70px 0}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+<a class="brand" href="#">DURON STUDIO</a>
+<div class="links"><a href="#work">Work</a><a href="#services">Services</a><a href="#casting">Casting</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero">
+<div class="wrap">
+<div class="eyebrow">Fashion · Editorial · Commercial</div>
+<h1>Photography with presence.</h1>
+<p>Duron Studio creates polished visual stories for fashion, brands, models and creative projects.</p>
+<div class="buttons"><a class="btn light" href="#contact">Book a shoot</a><a class="btn" href="#casting">Apply as a model</a></div>
+</div>
+</header>
+
+<section id="work"><div class="wrap">
+<div class="kicker">Selected work</div>
+<h2 class="title">A visual language built for modern fashion.</h2>
+<p class="intro">Portraits, fashion stories and campaign imagery presented through a refined editorial lens.</p>
+<div class="grid">
+<div class="card"><img src="images/editorial-woman.jpg" alt="Duron Studio editorial portrait"></div>
+<div class="card"><img src="images/fashion-man.jpg" alt="Duron Studio fashion portrait"></div>
+<div class="card"><img src="images/commercial-man.jpg" alt="Duron Studio commercial fashion portrait"></div>
+<div class="card"><img src="images/portrait-man.jpg" alt="Duron Studio male portrait"></div>
+<div class="card"><img src="images/portrait-woman-bw.jpg" alt="Duron Studio black and white portrait"></div>
+<div class="card"><img src="images/portrait-woman.jpg" alt="Duron Studio portrait"></div>
+</div>
+</div></section>
+
+<section id="services"><div class="wrap two">
+<div><div class="kicker">Services</div><h2 class="title">Built around the image you need.</h2><p class="intro">Every project is planned around its purpose, audience and visual identity.</p></div>
+<div>
+<div class="service"><h3>Fashion & Editorial</h3><p>Concept-led portraits, lookbooks, editorials and campaign imagery.</p></div>
+<div class="service"><h3>Model Portfolio</h3><p>Professional images for portfolios, castings and agency submissions.</p></div>
+<div class="service"><h3>Commercial Campaigns</h3><p>Brand-focused photography for products, launches and promotional work.</p></div>
+<div class="service"><h3>Creative Direction</h3><p>Support with visual concepts, mood, styling direction and shoot planning.</p></div>
+</div></div></section>
+
+<section id="casting" class="cast"><div class="wrap two">
+<div><div class="kicker">Model casting</div><h2 class="title">New faces. Strong stories.</h2>
+<p class="intro">Duron Studio welcomes aspiring and professional male and female models for selected photography projects and campaign opportunities.</p>
+<div class="buttons"><a class="btn" href="#apply" style="border-color:#111">Model application</a></div></div>
+<div>
+<div class="service"><h3>Who can apply?</h3><p>Male and female models, emerging talent and experienced professionals.</p></div>
+<div class="service"><h3>What we look for</h3><p>Professionalism, reliability, confidence and a strong visual presence.</p></div>
+<div class="service"><h3>Project types</h3><p>Editorials, portfolio shoots, fashion concepts and commercial campaigns.</p></div>
+</div></div></section>
+
+<section id="about"><div class="wrap two">
+<div><div class="kicker">The studio</div><h2 class="title">Duron Studio Photography</h2></div>
+<div><p class="intro">Duron Studio is a photography and creative studio focused on fashion, editorial, commercial imagery and model development.</p>
+<p class="intro">Our approach is simple: thoughtful concepts, intentional lighting and photographs that feel refined without losing personality.</p></div>
+</div></section>
+
+<section id="apply"><div class="wrap two">
+<div><div class="kicker">Model application</div><h2 class="title">Tell us about you.</h2><p class="intro">Submit your details for consideration for future Duron Studio projects.</p></div>
+<form class="form" action="mailto:duronstudiophotography@gmail.com" method="post" enctype="text/plain">
+<input name="name" placeholder="Full name" required>
+<input name="age" placeholder="Age">
+<input name="location" placeholder="City / State">
+<input name="instagram" placeholder="Instagram handle">
+<input name="experience" placeholder="Modeling experience">
+<input name="contact" placeholder="Phone or email" required>
+<textarea name="about" placeholder="Tell us briefly about yourself"></textarea>
+<button class="btn light" type="submit">Submit application</button>
+</form>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<div><div class="kicker">Contact</div><h2 class="title">Let's create something memorable.</h2>
+<div class="contactbox">
+<a href="tel:+16192126594">+1 619 212 6594</a>
+<a href="mailto:duronstudiophotography@gmail.com">duronstudiophotography@gmail.com</a>
+<p style="color:#aaa">4710 Oakton Street<br>Skokie, Illinois</p>
+<div class="social"><a href="mailto:duronstudiophotography@gmail.com">Email</a><a href="#casting">Model Casting</a></div>
+</div></div>
+<div class="contactbox"><p style="color:#aaa">For photography bookings, model opportunities and commercial inquiries, contact the studio directly.</p>
+<a class="btn light" href="mailto:duronstudiophotography@gmail.com?subject=Duron%20Studio%20Inquiry">Start an inquiry</a>
+<p class="note">Please contact the studio directly for availability, project details and booking information.</p>
+</div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Duron Studio Photography. All rights reserved.</div></footer>
+</body>
+</html>
